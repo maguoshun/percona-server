@@ -25719,7 +25719,7 @@ dfield_t *innobase_get_computed_value(
 /** Attempt to push down an index condition.
 @param[in] keyno MySQL key number
 @param[in] idx_cond Index condition to be checked
-@return idx_cond if pushed; NULL if not pushed */
+@return idx_cond if pushed; NULL if all pushed */
 class Item *ha_innobase::idx_cond_push(uint keyno, class Item *idx_cond) {
   DBUG_TRACE;
   assert(keyno != MAX_KEY);
